@@ -1,5 +1,5 @@
-# Code-Retrospective
-##Introduction
+# Python Live Project Code Summary
+## Introduction
 The following code was writen during my two month live project during my time in The Tech Academy software developer boot 
 camp. This specific project was to build a web centered around python and the django framework. This live project was my
 first taste of what it was like to work on a coordinated development team and actively set and achieve effective goals. 
@@ -13,7 +13,7 @@ I also loved the opportunity to get to see the issues my teammate had and how th
 
 I'd like to dive into the specifics of challenges I've faced and things I've learned a bit more.
 
-###First Week
+### First Week
 
 The beginning of my first week in the live project started off with a few simple tasks. Even 
 though I was already familiar with the work load, coming into a project that was already underway
@@ -21,13 +21,13 @@ made me have to reevaluate how to solve those problems. On a blank slate the ans
 forward but when code that had already been established has errors or a botched mergers breaks 
 previously working code, it can become a whole new problem. 
 
-#####The Problem #1
+##### The Problem #1
 
 My first task on the Python live project was simple. I had to fix a broken link leading to the space launch scraping app
 portion of the program. We did not initially know the reason for the broken link so I had to step through the code 
 to find where the break was. 
 
-#####The Solution #1
+##### The Solution #1
 
 At some point, the urls page for the space app was deleted. In addition to that, the url file for the project also had
 the path leading to the space app delete. In the code block below, I used three asterisks to note the code that I added
@@ -61,7 +61,7 @@ The below is the code from the space app url page I wrote to direct the program 
    
 This was a simple story and good practice to reacquaint me with Django.
 
-#####The Problem #2
+##### The Problem #2
     
 The next story was a fun one. This one was another case of having to fix a portion of the project that was once working
 and suddenly broke. For whatever reason, our movie scraping app was no longer populating our html page with the top 5
@@ -71,7 +71,7 @@ abilities. It also help me become proficient with using Microsoft Azure to explo
 incarnations of a project.
     
     
-#####The Solution #2
+##### The Solution #2
 
 I spent a few hours searching through our past commits on Azure attempting to locate the past working version of the
 project. Below, marked with three asterisks is the missing code that I eventually located. After this code was added,
@@ -95,14 +95,14 @@ the movie scraping app began to work properly again.
 This was also my first taste of working with an api. I was happy to finally cross that bridge and would get to do so in
 later stories as well.
 
-#####The Problem #3
+##### The Problem #3
     
 My next story was one of the largest and most fulfilling of the Python live project. My task was to clean up the app 
 that scrapes data for all the rocket launches happening around the world and to restore functionality to it. It was at
 this point I started to realize this project was a bit of a mess so it was great practice for navigating my around
 broken parts of a project.
     
-#####The Solution #3
+##### The Solution #3
 
 I first started with relocating all of the files related to space app and placed them in their corresponding folders.
 At first, there was a number of migrations and a launch model in our dataApp folder. I made sure that the movie scraping
@@ -211,14 +211,14 @@ adjustments I had to make. Below is the code I used to format the launch data th
 There would be more work that I discovered need to be done with the space app but this was basically it for this story.
 Again, I had a lot of fun with this one.
 
-#####The Problem #4
+##### The Problem #4
 
 So the morning after I completed the last story of reworking the space app, I went to go test it again. Everything was
 working fine except for the astronomy picture of the day. On that particular day, the picture as actually a video.
 I was assigned to keep working on the space app to fix this occurrence. It was at this point I actually went to nasa's
 api website to see how they implemented the apod on their end. 
 
-#####The Solution #4
+##### The Solution #4
     
 I found that they were using an iframe to contain their url. At first we were just using an image tag in the html.
 Below is the code block I changed to an iframe type. After this was changed, I was able to dynamically accommodate 
@@ -233,13 +233,13 @@ ether video or an image.
             </iframe>
         </div>
         
-#####The Problem #5
+##### The Problem #5
 
 My last story for the python live project was another fun one. I got to start a calendar app from the ground up. I got
 to work with apis more so I was very excited with that. The calendar app was to connect to the users google account 
 and let you set and update calendar events.
 
-#####The Solution #5
+##### The Solution #5
 
 Starting the app from the command prompt created a handful of files in the CalendarApp folder that I needed to get the
 app started. I registered the app in the dataScrape.settings.py page and the dataScrape.urls page. After this, I looked 
